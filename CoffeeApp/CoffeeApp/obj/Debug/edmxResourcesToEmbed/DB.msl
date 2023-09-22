@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PI2313_DBModelStoreContainer" CdmEntityContainer="PI2313_DBEntities13">
+    <EntitySetMapping Name="Artiklis">
+      <EntityTypeMapping TypeName="PI2313_DBModel.Artikli">
+        <MappingFragment StoreEntitySet="Artikli">
+          <ScalarProperty Name="Dostupno_Komada" ColumnName="Dostupno_Komada" />
+          <ScalarProperty Name="ID_Pica" ColumnName="ID_Pica" />
+          <ScalarProperty Name="Naziv_Pica" ColumnName="Naziv_Pica" />
+          <ScalarProperty Name="Kolicina" ColumnName="Kolicina" />
+          <ScalarProperty Name="Cijena" ColumnName="Cijena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Korisniks">
+      <EntityTypeMapping TypeName="PI2313_DBModel.Korisnik">
+        <MappingFragment StoreEntitySet="Korisnik">
+          <ScalarProperty Name="ID_Korisnika" ColumnName="ID_Korisnika" />
+          <ScalarProperty Name="Ime" ColumnName="Ime" />
+          <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Uloga" ColumnName="Uloga" />
+          <ScalarProperty Name="Smjena" ColumnName="Smjena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="PI2313_DBModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="ID_Korisnika" ColumnName="ID_Korisnika" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="kupac" ColumnName="kupac" />
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="Ukupna_Cijena" ColumnName="Ukupna_Cijena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_details">
+      <EntityTypeMapping TypeName="PI2313_DBModel.Order_detail">
+        <MappingFragment StoreEntitySet="Order details">
+          <ScalarProperty Name="ID_Pica" ColumnName="ID_Pica" />
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="ID_OrderDetails" ColumnName="ID_OrderDetails" />
+          <ScalarProperty Name="Naziv_Pica" ColumnName="Naziv_Pica" />
+          <ScalarProperty Name="Kolicina" ColumnName="Kolicina" />
+          <ScalarProperty Name="Cijena" ColumnName="Cijena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PI2313_DBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stols">
+      <EntityTypeMapping TypeName="PI2313_DBModel.Stol">
+        <MappingFragment StoreEntitySet="Stol">
+          <ScalarProperty Name="ID_korisnika" ColumnName="ID_korisnika" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="opis" ColumnName="opis" />
+          <ScalarProperty Name="ID_stol" ColumnName="ID_stol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
